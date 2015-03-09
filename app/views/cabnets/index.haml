@@ -1,0 +1,6 @@
+list of cabnets
+= link_to 'New Cabnet', new_cabnet_path
+- @cabnets.each do |cabnet|
+  = "Cabnet name: #{cabnet.name}."
+  = link_to 'Edit', edit_cabnet_path(cabnet)
+  = link_to 'Delete', cabnet_path(cabnet), method: :delete
